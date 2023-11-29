@@ -17,4 +17,36 @@ This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing el
 ***This text is bold and italic!***
 # This is a large heading. 
 
+Here's an unordered list, with:
+- One item
+- Two item
+- Three item
+- Sub-item one!
+- Sub_item two!
+
+# This is a large heading. 
+
+Here's an ordered list, with:
+
+1.Item one
+1.Item two
+1.Item three
+1.Item three-A
+1.Item three-B
+
+> This is a block quote. It should be in block quotes! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+# This is a large heading. 
+
+[Inline code: make this word inline.]
+
+# This is a large heading. 
+
+Format this text as code:
+
+`def foo():`
+     `if not bar:`
+          `return True`
+
+
 
