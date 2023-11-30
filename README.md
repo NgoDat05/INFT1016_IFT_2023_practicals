@@ -21,18 +21,18 @@ Here's an unordered list, with:
 - One item
 - Two item
 - Three item
-- Sub-item one!
-- Sub_item two!
+- <Sub-item one!>
+- <Sub_item two!>
 
 # This is a large heading. 
 
 Here's an ordered list, with:
 
-1.Item one
-1.Item two
-1.Item three
-1.Item three-A
-1.Item three-B
+1. Item one
+2. Item two
+3. Item three
+   1. Item three-A
+   2. Item three-B
 
 > This is a block quote. It should be in block quotes! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -44,13 +44,19 @@ Here's an ordered list, with:
 
 Format this text as code:
 
-`def foo():`
-     `if not bar:`
-          `return True`
+def foo():
+if not bar:
+return True
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kismet-IMG_6007-black.jpg/800px-Kismet-IMG_6007-black.jpg.)
 
 
 [Here's a link](https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg.)
+
+| Number  | Colour  | Size    |
+| :-------| :-------| :------:|
+|       1 | Red     | Big     |
+|       2 | Blue    | Small   |
+|       3 | Yellow  | Huge    |
 
 
