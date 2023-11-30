@@ -21,8 +21,8 @@ Here's an unordered list, with:
 - One item
 - Two item
 - Three item
-- <Sub-item one!>
-- <Sub_item two!>
+  - Sub-item one!
+  - Sub_item two!
 
 # This is a large heading. 
 
@@ -59,4 +59,6 @@ return True
 |       2 | Blue    | Small   |
 |       3 | Yellow  | Huge    |
 
-
+```python
+def my_function():
+     print("Hello from a function")
