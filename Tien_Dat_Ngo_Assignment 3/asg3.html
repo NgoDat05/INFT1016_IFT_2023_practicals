@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer</title>
+</head>
+
+<body>
+    <main>
+        <img id="engineerImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-gd84ZHbqgvfOTscGPWyLSTPDp3aQ3dgPOmIuLRQSk5QWwG2uYnZW7UB6SG6yfwbkKc&usqp=CAU" alt="Software Engineer">
+        <p id="description">A software engineer is a professional who applies engineering principles to the design, development, maintenance, testing, and evaluation of software and systems.</p>
+
+        <button onclick="changeInfo('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-gd84ZHbqgvfOTscGPWyLSTPDp3aQ3dgPOmIuLRQSk5QWwG2uYnZW7UB6SG6yfwbkKc&usqp=CAU', 'A software engineer is a professional who applies engineering principles to the design, development, maintenance, testing, and evaluation of software and systems.')">Overview</button>
+        <button onclick="changeInfo('https://spaces-wp.imgix.net/2016/06/coding-in-the-classroom.png?auto=compress,format&q=50', 'Coding is a fundamental skill for a software engineer. It involves writing instructions in a programming language to build software applications.')">Coding</button>
+        <button onclick="changeInfo('https://www.shiftbase.com/hs-fs/hubfs/6a0fa8af-1b1a-4f25-aa51-3ae2579d4e95%5B1%5D.jpeg?width=725&name=6a0fa8af-1b1a-4f25-aa51-3ae2579d4e95%5B1%5D.jpeg', 'Teamwork is crucial for software engineers. They often collaborate with other professionals to create high-quality software products.')">Teamwork</button>
+        <button onclick="changeInfo('https://www.simplilearn.com/ice9/free_resources_article_thumb/Integration_Testing.jpg', 'Testing is an essential phase in software development. Software engineers ensure that the software functions correctly and meets requirements through testing.')">Testing</button>
+        <button onclick="changeInfo('https://images.theconversation.com/files/505196/original/file-20230118-8082-ogudaj.jpg?ixlib=rb-1.1.0&rect=214%2C0%2C6654%2C4392&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip', 'Innovation is a key aspect of software engineering. Engineers constantly seek new and better ways to solve problems and develop innovative solutions.')">Innovation</button>
+    </main>
+
+    <script>
+        function changeInfo(imageUrl, description) {
+            document.getElementById('engineerImage').src = imageUrl;
+            document.getElementById('description').innerText = description;
+        }
+    </script>
+</body>
+
+</html>
