@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #61dafb; /* React Blue */
+    --secondary-color: #2ecc71; /* Emerald Green */
+    --bg-color: #f8f9fa; /* Light Gray */
+    --font-color: #343a40; /* Dark Gray */
+    --heading-color: #61dafb; /* React Blue */
+}
+
+[data-theme="dark"] {
+    --primary-color: #61dafb; /* React Blue */
+    --secondary-color: #3498db; /* Dodger Blue */
+    --bg-color: #2d3436; /* Charcoal Gray */
+    --font-color: #ecf0f1; /* Light Gray */
+    --heading-color: #f39c12; /* Orange */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
