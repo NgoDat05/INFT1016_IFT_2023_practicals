@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+}
+
+[data-theme="dark"] {
+     --primary-color: rgb(0, 0, 0);
+ }
+  
+h1 {font-size: 1.33em;}
+  h2 {font-size: 1.17em;
+
+p {margin: 0 0 0.5em 0;}
+
+h1, h2 {margin: 0.83em 0 0.17em 0; }
+
+p:first-of-type {
+    font: 0.17em/1.33 Verdana, sans-serif;
+  }
+
+  p + p {text-indent: 5em;}
+  /* this selects p tags preceded by a p tag --
+     that is, not the first p tag */
+
