@@ -1,23 +1,79 @@
 :root {
-    --primary-color: rgb(255, 255, 255);
-}
-
-[data-theme="dark"] {
-     --primary-color: rgb(0, 0, 0);
- }
-  
-h1 {font-size: 1.33em;}
-  h2 {font-size: 1.17em;
-
-p {margin: 0 0 0.5em 0;}
-
-h1, h2 {margin: 0.83em 0 0.17em 0; }
-
-p:first-of-type {
-    font: 0.17em/1.33 Verdana, sans-serif;
-  }
-
-  p + p {text-indent: 5em;}
-  /* this selects p tags preceded by a p tag --
-     that is, not the first p tag */
-
+    --base-font-color: rgb(131, 148, 150);
+    --secondary-font-color: rgb(88, 110, 117);
+    --emphasised-font: rgb(147, 161, 161);
+    --c-background-color: rgb(0, 43, 54);
+    --c-background-highlights: rgb(7, 54, 66);
+    --c-yellow: rgb(181, 137, 0);
+    --c-orange: rgb(203, 75, 22);
+    --c-red: rgb(220, 50, 47);
+    --c-magenta: rgb(211, 54, 130);
+    --c-violet: rgb(108, 113, 196);
+    --c-blue: rgb(38, 139, 210);
+    --c-cyan: rgb(42, 161, 152);
+    --c-green: rgb(133, 153, 0);
+    }
+    body {
+    background-color: var(--c-background-color);
+    color: var(--base-font-color);
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    header, footer {
+    background-color: var(--c-background-highlights);
+    }
+    header h1 {
+    text-align: center;
+    font-size: 150%;
+    color: var(--c-yellow);
+    }
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    nav li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    }
+    nav a {
+    color: var(--c-magenta);
+    text-decoration: none;
+    }
+    nav a:hover {
+    color: var(--c-orange);
+    }
+    article {
+    border: 3px solid var(--c-cyan);
+    padding: 10px;
+    }
+    article h3 {
+    border-bottom: 3px solid var(--c-cyan);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    }
+    aside {
+    color: var(--c-green);
+    }
+    aside a {
+    color: var(--c-red);
+    text-decoration: none;
+    }
+    aside a:hover {
+    color: var(--c-blue);
+    }
+    main {
+    display: flex;
+    }
+    main article {
+    flex: 1;
+    }
+    main aside {
+    
+    flex-basis: 30%;
+    padding-left: 20px;
+    }
+    main h2 {
+    padding-top: 50px;
+    }
