@@ -127,11 +127,11 @@
     <header>
         <h1 id="greeting">Hello, Software Engineer</h1>
     </header>
-    <form id="nameForm">
-        <label for="userName">Enter your name: </label>
-        <input type="text" id="userName" name="user" placeholder="Your Name" 
-        <button onclick="submitForm()">Submit</button>
-    </form>
+    <form action="/submit" method="get">
+      <label for="userName">Enter your name:</label>
+      <input type="text" id="userName" name="name">
+      <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
 
