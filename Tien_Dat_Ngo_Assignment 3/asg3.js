@@ -45,3 +45,14 @@ document.getElementById('nameForm').addEventListener('submit', function(event) {
     event.preventDefault();
     updateHeading();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var datetimeElement = document.getElementById('datetime');
+    if (datetimeElement) {
+        var currentDate = new Date();
+        var dateString = currentDate.toDateString();
+        var timeString = currentDate.toLocaleTimeString();
+
+        datetimeElement.innerText = 'Date: ' + dateString + ' | Time: ' + timeString;
+    }
+});
