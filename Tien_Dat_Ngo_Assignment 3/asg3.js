@@ -24,7 +24,7 @@ function updateHeading() {
 
     
     const greetingElement = document.getElementById('greeting');
-    greetingElement.textContent = `Hello ${userName}`;
+    greetingElement.textContent = `Hello ${userName}- Software Engineer`;
 }
 
 function submitForm() {
