@@ -127,11 +127,13 @@
     <header>
         <h1 id="greeting">Hello, Software Engineer</h1>
     </header>
-    <form action="/submit" method="get">
+    <form>
       <label for="userName">Enter your name:</label>
-      <input type="text" id="userName" name="name">
+      <input type="text" id="userName" name="user_name" required>
       <button type="button" onclick="submitForm()">Submit</button>
   </form>
+  <div id="result"></div>
+  <script src="asg3.js"></script>
 </body>
 </html>
 

@@ -20,13 +20,24 @@ function updateHeading() {
     document.body.setAttribute('data-theme', currentTheme);
 
     
-    const userName = userNameFromQuery || localStorage.getItem('user_name') || 'Tien Dat Ngo';
+    const userName = userNameFromQuery || localStorage.getItem('user_name');
 
     
     const greetingElement = document.getElementById('greeting');
-    greetingElement.textContent = `Hello, ${userName} - Software Engineer`;
+    greetingElement.textContent = `Hello ${userName}`;
 }
 
+function submitForm() {
+    // Get the value entered in the input field
+    var enteredName = document.getElementById('userName').value;
+
+    // Construct a message with the entered name
+    var message = "Hello, " + enteredName + "!";
+
+    // Display the message in the result div
+    document.getElementById('result').innerText = message;
+    localStorage.setItem('user_name', enteredName);
+}
 
 function toggleTheme() {
     const root = document.documentElement;
@@ -57,8 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function submitForm() {
-    // Get form data if needed
 
-    // Open a new link
-    window.open('https://www.unisa.edu.au/', '_blank'); }
+
+
+
