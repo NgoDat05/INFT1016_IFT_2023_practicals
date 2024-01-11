@@ -27,18 +27,6 @@ function updateHeading() {
     greetingElement.textContent = `Hello ${userName}- Software Engineer`;
 }
 
-function submitForm() {
-    // Get the value entered in the input field
-    var enteredName = document.getElementById('userName').value;
-
-    // Construct a message with the entered name
-    var message = "Hello, " + enteredName + "!";
-
-    // Display the message in the result div
-    document.getElementById('result').innerText = message;
-    localStorage.setItem('user_name', enteredName);
-}
-
 function toggleTheme() {
     const root = document.documentElement;
     const currentTheme = root.getAttribute('data-theme') || 'light';
@@ -67,6 +55,18 @@ document.addEventListener('DOMContentLoaded', function() {
         datetimeElement.innerText = 'Date: ' + dateString + ' | Time: ' + timeString;
     }
 });
+
+function submitForm() {
+    // Get the value entered in the input field
+    var enteredName = document.getElementById('userName').value;
+
+    // Construct a message with the entered name
+    var message = "Hello, " + enteredName + "!";
+
+    // Display the message in the result div
+    document.getElementById('result').innerText = message;
+    localStorage.setItem('user_name', enteredName);
+}
 
 
 
