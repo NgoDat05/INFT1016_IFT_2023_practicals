@@ -56,3 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
         datetimeElement.innerText = 'Date: ' + dateString + ' | Time: ' + timeString;
     }
 });
+
+function submitForm() {
+    // Get form data if needed
+
+    // Open a new link
+    window.open('https://www.unisa.edu.au/', '_blank'); }
